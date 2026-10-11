@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--project from Codecademy Front-End Engineer Career Path-->
+<!--focus of this project is to practice using flex-box-->
+
+<!--URL to example website provided by Codecademy: https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/example-site/index.html#mission-->
+
+<!--minimum requirements for layout:
+1. A title and logo or splash image.
+2. A mission statement or brief description of the company.
+3. A list or set of images and titles representing the product or products of the company.
+4. A section describing some of the company’s employees or teammates. -->
+
+<!--companyy chosen to make webpage: Bungie-->
+
+<!--layout of website:
+    header
+    --company-logo
+    --about
+    --games
+    --careers
+    --contact us
+    hero / logo section
+    --company logo 
+    mission statement of company
+    the 'about us' section
+    gallery flexbox of games
+    the employees and CEO
+    --founders
+    --CEO
+    footer-->
+
+<html>
+
+	<head>
+		<link rel="shortcut icon" href="./resources/icons/favicon.ico" type="image/x-icon">
+		<meta name="Bungie" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./resources/styles/styles.css">
+		<meta charset="UTF-8">
+		<title>Bungie | Video Game Company</title>
+	</head>
+
+	
+
+	<body>
+
+		<!--header section-->
+		<header>
+			<div class="header-ctr container">
+				<div class="logo-box">
+					<h4><a href="#">Bungie</a></h4>
+				</div>
+				<div class="desktop nav-box">
+					<nav>
+						<ul>
+							<li><a href="#hero-landing">Press to Home</a></li>
+							<li><a href="#gallery-products">Games</a></li>
+							<li><a href="#company-mission">Mission</a></li>
+							<li><a href="#about-company">About Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="mobile nav-box">
+					<nav>
+						<ul>
+							<li><a href="#hero-landing">Home</a></li>
+							<li><a href="#gallery-products">Games</a></li>
+							<li><a href="#company-mission">Mission</a></li>
+							<li><a href="#about-company">About</a></li>
+							<li><a href="#contact-us">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			
+			<!-- hero section / main title -->
+			<section id="hero-landing">
+				<div class="hero-ctr container">
+					<div class="banner-box">
+						<img src="./resources/images/Bungie_Logo-Official.png">
+					</div>
+				</div>
+			</section>
+
+			<!--statement / mission-->
+			<section id="company-mission">
+				<div class="mission-ctr container">
+					<div class="statement-box">
+						<div class="statement-list">
+							<ul>
+								<li>Community bonding and building</li>
+								<li>immersive and engagement</li>
+								<li>Long-lasting games and universes</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--product gallery-->
+			<section id="gallery-products">
+				<div class="gallery-ctr container">
+					<div class="gallery-box">
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Destiny_XBO.jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Destiny_2_(artwork).jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Halo_-_Combat_Evolved_(XBox_version_-_box_art).jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Halo2-cover.png">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Halo_3_final_boxshot.jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Halo_3_ODST_Box_Art.png">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Halo-_Reach_box_art.png">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Marathon_(video_game).jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Marathon_2026_box_art.png">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Myth_II_Cover.jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Oni_Coverart.jpg">
+							</div>
+						</div>
+						<div class="gallery-item">
+							<div class="item-picture">
+								<img src="./resources/images/games/Myth_II_Cover.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--About company-->
+			<section id="about-company">
+				<div class="about-ctr container">
+					<div class="about-box">
+						<div class="about-title">
+							<h2>30 years of building worlds and communities</h2>
+						</div>
+						<div class="about-content">
+							<p>WIth a life of 30 years, Bungie has become a world-known gaming company. With its flagship videogame franchise, Destiny, as the most recognized and loved by fans of the company.</p>
+							<p>Creators of the widely known game franchise of Destiny and Halo since 1991.</p>
+						</div>
+						<div class="career-button">
+							<h4><a href="https://careers.bungie.com/">Careers at Bungie</a></h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+
+	</body>
+
+	<!--footer section-->
+	<footer>
+		<div class="footer container">
+			<div class="content-box">
+				<p>Copyright @ 2026</p>
+			</div>
+		</div>
+	</footer>
+
+</html>
